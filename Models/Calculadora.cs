@@ -68,7 +68,7 @@ namespace Calcularoda_CSharp.Models
             LerXeY();
             Console.WriteLine($"{X} x {Y} = {X * Y}");
         }
-        
+
         public void Potencia()
         {
             LerXeY();
@@ -80,6 +80,33 @@ namespace Calcularoda_CSharp.Models
             LerX();
             double raiz = Math.Sqrt(X);
             Console.WriteLine($"Raiz quadrada de {X} = {raiz}");
+        }
+        
+        public void Seno()
+        {
+            if(X == 0) { LerX(); }  
+            double angulo = X;
+            double rad = angulo * Math.PI / 180;
+            double seno = Math.Sin(rad);
+            Console.WriteLine($"Seno de {angulo}º = {Math.Round(seno, 4)}");
+        }
+
+        public void Cosseno()
+        {
+            if(X == 0) { LerX(); }  
+            double angulo = X;
+            double rad = angulo * Math.PI / 180;
+            double cosseno = Math.Cos(rad);
+            Console.WriteLine($"Cosseno de {angulo}º = {Math.Round(cosseno, 4)}");
+        }
+
+        public void Tangente()
+        {
+            if(X == 0) { LerX(); }  
+            double angulo = X;
+            double rad = angulo * Math.PI / 180;
+            double tangente = Math.Tan(rad);
+            Console.WriteLine($"Tangente de {angulo}º = {Math.Round(tangente, 4)}");
         }
     }
 }
