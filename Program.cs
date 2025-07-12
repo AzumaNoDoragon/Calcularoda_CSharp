@@ -4,10 +4,11 @@ using Calcularoda_CSharp.Models;
 int opc;
 Calculadora calc = new Calculadora();
 
-opc = calc.Menu();
 
 do
 {
+    opc = calc.Menu();
+
     switch (opc)
     {
         case 1:

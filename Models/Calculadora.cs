@@ -60,6 +60,12 @@ namespace Calcularoda_CSharp.Models
         public void Dividir()
         {
             LerXeY();
+            do
+            {
+                Console.WriteLine("O segundo valor não pode ser 0");
+                Console.WriteLine("Digite o 2º valor: ");
+                Y = Convert.ToDouble(Console.ReadLine());
+            } while(Y == 0);
             Console.WriteLine($"{X} / {Y} = {X / Y}");
         }
 
