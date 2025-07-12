@@ -30,5 +30,19 @@ namespace Calcularoda_CSharp.Models
 
             return Convert.ToInt32(Console.ReadLine());
         }
+
+        public void LerXeY()
+        {
+            Console.WriteLine("Digite o 1º valor: ");
+            X = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite o 2º valor: ");
+            Y =  Convert.ToDouble(Console.ReadLine());
+        }
+
+        public void LerX()
+        {
+            Console.WriteLine("Digite o valor: ");
+            X = Convert.ToDouble(Console.ReadLine());
+        }
     }
 }
