@@ -36,13 +36,35 @@ namespace Calcularoda_CSharp.Models
             Console.WriteLine("Digite o 1º valor: ");
             X = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Digite o 2º valor: ");
-            Y =  Convert.ToDouble(Console.ReadLine());
+            Y = Convert.ToDouble(Console.ReadLine());
         }
 
         public void LerX()
         {
             Console.WriteLine("Digite o valor: ");
             X = Convert.ToDouble(Console.ReadLine());
+        }
+        
+        public void Somar()
+        {
+            LerXeY();
+            Console.WriteLine($"{X} + {Y} = {X + Y}");
+        }
+
+        public void Subtrair()
+        {
+            LerXeY();
+            Console.WriteLine($"{X} - {Y} = {X - Y}");
+        }
+        public void Dividir()
+        {
+            LerXeY();
+            Console.WriteLine($"{X} / {Y} = {X / Y}");
+        }
+        public void Multiplicar()
+        {
+            LerXeY();
+            Console.WriteLine($"{X} x {Y} = {X * Y}");
         }
     }
 }
