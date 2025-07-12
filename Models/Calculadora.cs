@@ -44,7 +44,7 @@ namespace Calcularoda_CSharp.Models
             Console.WriteLine("Digite o valor: ");
             X = Convert.ToDouble(Console.ReadLine());
         }
-        
+
         public void Somar()
         {
             LerXeY();
@@ -56,15 +56,30 @@ namespace Calcularoda_CSharp.Models
             LerXeY();
             Console.WriteLine($"{X} - {Y} = {X - Y}");
         }
+
         public void Dividir()
         {
             LerXeY();
             Console.WriteLine($"{X} / {Y} = {X / Y}");
         }
+
         public void Multiplicar()
         {
             LerXeY();
             Console.WriteLine($"{X} x {Y} = {X * Y}");
+        }
+        
+        public void Potencia()
+        {
+            LerXeY();
+            Console.WriteLine($"{X} ^ {Y} = {Math.Pow(X, Y)}");
+        }
+
+        public void Raiz()
+        {
+            LerX();
+            double raiz = Math.Sqrt(X);
+            Console.WriteLine($"Raiz quadrada de {X} = {raiz}");
         }
     }
 }
